@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: poppins;
+    tab-size: 4;
+    font-feature-settings: normal;
+}
+
+@layer {
+
+    .input {
+            @apply block border-neutral-200 focus:border-blue-500 focus:ring focus:ring-blue-800 focus:ring-opacity-50 bg-white dark:border-neutral-700 dark:focus:ring-blue-600 dark:focus:ring-opacity-25 dark:bg-neutral-900 h-[46px]
+            px-4 py-3 lg:w-[444px] w-[288px] rounded-3xl outline-none;
+    }
+    .btn {
+        @apply bg-[#632DF8] w-full h-[46px] lg:w-[46px] 
+        rounded-full flex;
+    }
+    
+    .li {
+        @apply list-none px-3 bg-slate-200 border-slate-400 hover:bg-slate-400 cursor-default;
+    }
+
+    
+}
